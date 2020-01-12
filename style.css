@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(173, 237, 255), rgb(20, 137, 169));
+}
+
+.board {
+    background: linear-gradient(#528fbb, #528eaa);
+    width: 450px;
+    height: 96vh; /* 96% van de "view height" */
+    margin: 2vh auto;
+}
