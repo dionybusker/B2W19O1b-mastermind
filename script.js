@@ -1,3 +1,5 @@
+var colors = ["red", "green", "blue", "yellow", "purple", "orange"];
+
 var guessContainer = document.getElementsByClassName("guess-container")[0];
 var guesses = document.createElement("div");
     guesses.style.width = "75%";
@@ -20,7 +22,7 @@ for (var rows = 12; rows > 0; rows--) {
             colorBox.style.height = "25px";
             colorBox.style.display = "inline-block";
             colorBox.style.margin = "5px";
-            colorBox.style.borderRadius = "0 15px";
+            colorBox.style.borderRadius = "0 10px";
             divGuesses.appendChild(colorBox);
     }
 
