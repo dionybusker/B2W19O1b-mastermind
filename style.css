@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgb(173, 237, 255), rgb(20, 137, 169));
+    background: linear-gradient(#adedff, #1489a9);
 }
 
 .flexer {
@@ -21,6 +21,20 @@ body {
     width: 100%;
     height: 10%;
     border: 1px solid black;
+}
+
+.answer-container > button {
+    border: none;
+    width: 30%;
+    position: relative;
+    left: 70%;
+    font-size: 25px;
+    cursor: pointer;
+    background: linear-gradient(#a91414, #ffadad);
+}
+
+.answer-container > button:hover {
+    background: linear-gradient(#ffadad, #a91414);
 }
 
 /* guess-container */
