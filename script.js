@@ -1,5 +1,3 @@
-var colors = ["red", "green", "blue", "yellow", "purple", "orange"];
-
 var guessContainer = document.getElementsByClassName("guess-container")[0];
 var guesses = document.createElement("div");
     guesses.style.width = "75%";
@@ -13,10 +11,11 @@ var checkPin = document.createElement("div");
 for (var rows = 12; rows > 0; rows--) {
     // kleuren gedeelte
     var divGuesses = document.createElement("div");
-        divGuesses.setAttribute("id", `row_${rows}`);
+        divGuesses.setAttribute("class", "guess-rows");
         guesses.appendChild(divGuesses)
     for (var column = 0; column < 4; column++) {
         var colorBox = document.createElement("div");
+            colorBox.setAttribute("class", "guess-box")
             colorBox.style.border = "1px solid black";
             colorBox.style.width = "40px";
             colorBox.style.height = "25px";
@@ -28,10 +27,11 @@ for (var rows = 12; rows > 0; rows--) {
 
     // pins gedeelte
     var divPins = document.createElement("div");
-        divPins.setAttribute("id", `row_${rows}`);
+        divPins.setAttribute("class", "hint-rows");
         checkPin.appendChild(divPins);
     for (var column = 0; column < 4; column++) {
         var pin = document.createElement("div");
+            pin.setAttribute("class", "hint-box");
             pin.style.border = "1px solid black";
             pin.style.width = "7px";
             pin.style.height = "15px";
@@ -41,3 +41,4 @@ for (var rows = 12; rows > 0; rows--) {
     }
 }
 
+var colors = ["red", "green", "blue", "yellow", "purple", "orange"];
